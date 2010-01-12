@@ -124,6 +124,30 @@ class DocStructTreeParser(object):
         visual_style["vertex_label_size"] = [10] * g.vcount()
         
         plot(g, filename, **visual_style)
+        
+        
+    def outputDOT(self, tree, filename):
+        root = tree.getroot()
+        
+        g = Graph(0)
+        names = list()
+        self.__drawTree__(root, g, -1, names)
+        
+        g.vs["label"] = names
+        
+        layout = g.layout("tree")
+        visual_style = {}
+        visual_style["vertex_size"] = [20] * g.vcount()
+        visual_style["vertex_color"] = ["white"] * g.vcount()
+        visual_style["vertex_label"] = g.vs["label"]
+        visual_style["edge_width"] = [1] * g.vcount()
+        visual_style["layout"] = layout
+        visual_style["bbox"] = (2000, 900)
+        visual_style["margin"] = 50
+        visual_style["vertex_label_angle"] = [3 * math.pi / 2] * g.vcount()
+        visual_style["vertex_label_size"] = [10] * g.vcount()
+        
+        g.write_dot(filename)
     
     
     def __getEtree__(self, htmlFile):

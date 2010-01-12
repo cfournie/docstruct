@@ -49,7 +49,9 @@ class DocStructParser(object):
                     # output diagnostic html renders
                     #self.treeParser.outputImage(xmltree, os.path.join(self.outputDir, str(i) + '_' + 'html' + '_' + shortname + '.png'))
                     #self.treeParser.outputXML(xmltree, os.path.join(self.outputDir, str(i) + '_' + 'html'+ '_' + shortname + '.xml'))
+                    #self.treeParser.outputDOT(xmltree, os.path.join(self.outputDir, str(i) + '_' + 'html' + '_' + shortname + '.dot'))
                     
                     # output diagnostic DS renders
                     #self.treeParser.outputImage(dstree, os.path.join(self.outputDir, str(i) + '_' + 'ds' + '_' + shortname + '.png'))
                     self.treeParser.outputXML(dstree, os.path.join(self.outputDir, str(i) + '_' + 'ds' + '_' + shortname + '.xml'))
+                    #self.treeParser.outputDOT(dstree, os.path.join(self.outputDir, str(i) + '_' + 'ds' + '_' + shortname + '.dot'))
