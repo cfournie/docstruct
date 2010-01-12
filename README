@@ -1,6 +1,7 @@
-docstruct - A Document Structure Parser
+DocStruct - A Document Structure Parser
 
-A tool to create Document Structure[1] (DS) trees from XHTML websites.  This project was created as a term project for CSI 5385 at the University of Ottawa, Fall 2009.  More detailed information on the project can be found in the paper located at http://cloud.github.com/downloads/cfournie/docstruct/paper.pdf
+A tool to create Document Structure[1] (DS) trees from XHTML websites.  This was created as a term project for CSI 5385 at the University of Ottawa, Fall 2009.  More detailed information on the project can be found in the paper located at http://cloud.github.com/downloads/cfournie/docstruct/paper.pdf
+
 
 Directories
   \module\  - Contains the python parser tool
