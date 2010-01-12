@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<document position="0" indent="0" value="test_11_table">
+  <section-l1 position="0" indent="0" value="XHTMl 1.1 Tests">
+    <section-l2 position="0" indent="0" value="Table Modules">
+      <section-l3 position="0" indent="0" value="Table Module Tests">
+        <section-l4 position="0" indent="0">
+          <section-l5 position="0" indent="0">
+            <section-l6 position="0" indent="0">
+              <paragraph position="0" indent="0">
+                <text-sentence position="0" indent="0" value="Table summary."/>
+                <text-sentence position="1" indent="0" value="Table caption."/>
+              </paragraph>
+            </section-l6>
+          </section-l5>
+        </section-l4>
+      </section-l3>
+    </section-l2>
+  </section-l1>
+</document>

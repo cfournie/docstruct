@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="document">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="section-l1"/>
+      </xs:sequence>
+      <xs:attribute name="indent" use="required" type="xs:integer"/>
+      <xs:attribute name="lang" type="xs:NCName"/>
+      <xs:attribute name="position" use="required" type="xs:integer"/>
+      <xs:attribute name="value" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="section-l1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="section-l2"/>
+      </xs:sequence>
+      <xs:attribute name="indent" use="required" type="xs:integer"/>
+      <xs:attribute name="position" use="required" type="xs:integer"/>
+      <xs:attribute name="value" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="section-l2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="section-l3"/>
+      </xs:sequence>
+      <xs:attribute name="indent" use="required" type="xs:integer"/>
+      <xs:attribute name="position" use="required" type="xs:integer"/>
+      <xs:attribute name="value"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="section-l3">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="section-l4"/>
+      </xs:sequence>
+      <xs:attribute name="indent" use="required" type="xs:integer"/>
+      <xs:attribute name="position" use="required" type="xs:integer"/>
+      <xs:attribute name="value"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="section-l4">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="section-l5"/>
+      </xs:sequence>
+      <xs:attribute name="indent" use="required" type="xs:integer"/>
+      <xs:attribute name="position" use="required" type="xs:integer"/>
+      <xs:attribute name="value"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="section-l5">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="section-l6"/>
+      </xs:sequence>
+      <xs:attribute name="indent" use="required" type="xs:integer"/>
+      <xs:attribute name="position" use="required" type="xs:integer"/>
+      <xs:attribute name="value"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="section-l6">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="paragraph"/>
+      </xs:sequence>
+      <xs:attribute name="indent" use="required" type="xs:integer"/>
+      <xs:attribute name="position" use="required" type="xs:integer"/>
+      <xs:attribute name="value"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="paragraph">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="text-sentence"/>
+      </xs:sequence>
+      <xs:attribute name="indent" use="required" type="xs:integer"/>
+      <xs:attribute name="position" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="text-sentence">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="text-clause"/>
+      </xs:sequence>
+      <xs:attribute name="indent" use="required" type="xs:integer"/>
+      <xs:attribute name="position" use="required" type="xs:integer"/>
+      <xs:attribute name="value"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="text-clause">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="text-phrase"/>
+      </xs:sequence>
+      <xs:attribute name="indent" use="required" type="xs:integer"/>
+      <xs:attribute name="position" use="required" type="xs:integer"/>
+      <xs:attribute name="value"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="text-phrase">
+    <xs:complexType>
+      <xs:attribute name="indent" use="required" type="xs:integer"/>
+      <xs:attribute name="position" use="required" type="xs:integer"/>
+      <xs:attribute name="value" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
