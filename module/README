@@ -1,0 +1,15 @@
+Document Structure tool
+
+Directories
+  \src\      - Contains source code
+  \data\    - Contains sample data to process
+
+Requires
+  - Python 2.6
+  - python-lxml 2.0+
+    - libxml2
+    - libxslt
+  - python-cairo;
+  - python-igraph 0.5+;
+    - igraph;
+    - cairo (easily installed as a part of GTK).
