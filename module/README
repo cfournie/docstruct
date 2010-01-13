@@ -1,15 +1,22 @@
-Document Structure tool
+Document Structure Tool
+
+Running .\src\main.py with no commandline arguments will parse all files (assumed to only be HTML files)
+located in the .\data\ directory, and output XML files containing Document Structures in the \.output\
+directory.  If commandline options are specified, the first argument is considered the 'data' directory,
+and the second the 'output' directory.  If an HTML file cannot be parsed because it contains invalid
+markup or characters, the filename of the offending file will be logged to a file entitled 'error.log'
+in the current working directory.
 
 Directories
-  \src\      - Contains source code
+  \src\     - Contains source code
   \data\    - Contains sample data to process
 
 Requires
-  - Python 2.6
+  - Python 2.6.x
   - python-lxml 2.0+
     - libxml2
     - libxslt
-  - python-cairo;
   - python-igraph 0.5+;
     - igraph;
     - cairo (easily installed as a part of GTK).
+  - python-cairo (a version compatible with python-igraph);
