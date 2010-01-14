@@ -1,4 +1,4 @@
-Document Structure Tool
+DocStruct - Tool
 
 Running .\src\main.py with no commandline arguments will parse all files (assumed to only be HTML files)
 located in the .\data\ directory, and output XML files containing Document Structures in the \.output\
