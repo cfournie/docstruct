@@ -1,8 +1,8 @@
 DocStruct - A Document Structure Parser
 
 A tool to create Document Structure[1] (DS) trees from XHTML websites.  This was created as a term project for 
-CSI 5385 at the University of Ottawa, Fall 2009.  More detailed information on the project can be found in the 
-paper located at http://cloud.github.com/downloads/cfournie/docstruct/paper.pdf
+CSI 5386 (Fall 2009) at the University of Ottawa, Fall 2009.  More detailed information on the project can be
+found in the paper located at http://cloud.github.com/downloads/cfournie/docstruct/paper.pdf
 
 
 Directories
@@ -12,5 +12,5 @@ Directories
 
 References
 
-[1] R. Power, D. Scott, and N. Bouayad-Agha, \Document structure," Comput. Linguist., vol. 29, no. 2,
+[1] R. Power, D. Scott, and N. Bouayad-Agha, "Document structure," Comput. Linguist., vol. 29, no. 2,
 pp. 211-260, 2003.
