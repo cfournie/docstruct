@@ -1,4 +1,4 @@
-Document Structure Tool
+DocStruct - Tool
 
 Running .\src\main.py with no commandline arguments will parse all files (assumed to only be HTML files)
 located in the .\data\ directory, and output XML files containing Document Structures in the \.output\
@@ -13,10 +13,10 @@ Directories
 
 Requires
   - Python 2.6.x
-  - python-lxml 2.0+
+  - python-lxml 2.2.x
     - libxml2
     - libxslt
-  - python-igraph 0.5+;
+  - python-igraph 0.5.x
     - igraph;
-    - cairo (easily installed as a part of GTK).
-  - python-cairo (a version compatible with python-igraph);
+    - cairo (easily installed as a part of GTK+)
+  - python-cairo (a version compatible with python-igraph)
